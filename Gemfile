@@ -17,6 +17,8 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'bootstrap', '~> 4.0.0.alpha3'
+
 
 group :development, :test do
   gem 'sqlite3'
