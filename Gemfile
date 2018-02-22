@@ -9,6 +9,7 @@ end
 #gem 'devise'
 #gem 'pundit'
 
+gem 'twitter'
 gem 'rails'
 gem 'puma'
 gem 'sass-rails'
@@ -17,6 +18,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'sqlite3'
