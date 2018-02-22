@@ -9,6 +9,7 @@ end
 #gem 'devise'
 #gem 'pundit'
 
+gem 'twitter'
 gem 'rails'
 gem 'puma'
 gem 'sass-rails'
@@ -18,6 +19,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'dotenv-rails'
 
 
 group :development, :test do
