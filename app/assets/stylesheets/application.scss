@@ -19,8 +19,12 @@ body {
 }
 
 .logo {
-	width: 200px;
-	height: auto;
+	display: block; 
+	max-width: 200px;
+	height: 100px;
+	padding-bottom: 20px 0 20px 0;
+        
+
 }
 
 h2 {
@@ -30,22 +34,22 @@ h2 {
 h1 {
 	color: red;
 	padding-top: 30px;
+
 }
 
 
 #top {
-	/* background-image: url('/assets/bg.jpg');*/
 	background-color: black;
     background-size: contain;
     background-position: left;
     color: white;
-
 	} 
 
-#top p{
-	font-size: 80%;
-
+#top p {
+	font-size: 120%;
 }
+
+
 
 
 .email {
@@ -59,11 +63,44 @@ border-radius: .25rem;
 
 input {
  height: 40px;
+ width: 400px;
+ padding-left: 10px;
+}
+
+
+.btn{
+    border: none;
+    width: 200px;
+    font-size: 150%;
+}
+
+
+.btn:hover {
+    transition: all 0.3s ease;
+    background:  #302b63;
+
+
+}
+
+.cta {
+	border-radius: 15px; 
+	background-color: #ff9800;
+	color: black;
+	padding : 20px; 
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+
+.cta p {
+	font-weight: bold;
+	font-size: 120%;
 }
 
 .iphone {
-	height: 300px;
+	height: 600px;
 	width: auto;
+
 }
 
 
@@ -74,6 +111,7 @@ input {
 	padding-top: 50px;
 	border-top : 1px solid #c1c1c1;
 	border-bottom : 1px solid #c1c1c1;
+	height: 60vh;
 }
 
 
@@ -100,19 +138,17 @@ input {
 }
 
 .reasthree {
-	border-bottom: 6px solid red;
+	border-bottom: 6px solid #8E0E00;
 }
 
 
 /*Founder*/
 #founderbg {
-background: #8E0E00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   background: #8E0E00;  /* fallback for old browsers */
 	padding-top: 50px;
 	padding-bottom: 50px;
 	color: white;
+	height: 60vh;
 }
 
 .profil {
@@ -121,10 +157,46 @@ background: linear-gradient(to bottom, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, 
 }
 
 
-.MailChimp {
-	padding: 5%;
 
 
+
+
+/*References*/
+
+#refsec {
+   background: white;  
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: black;
+	height: 60vh;
 }
 
 
+
+
+ /* cover photo */
+
+
+
+#coversec {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  background-image: url('bg.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.covcontent  {
+	display: flex;
+  align-items: center;
+}
+
+
+.MailChimp {
+	padding: 5%;
+}

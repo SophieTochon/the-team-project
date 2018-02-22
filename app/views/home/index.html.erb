@@ -6,42 +6,40 @@
   <div class="row">
 
 
-  	  <div class = "offset-lg-1 col-lg-6 col-sm-12">
+  	  <div class = "offset-lg-1 col-lg-7 col-sm-12">
 	  	   <div class = "row" id = "logo">
 			<%= image_tag("logo.png", :class => "logo")%>
 		   </div>
        
 
 	       <div class = "row" id = "maintitle">
-		  		<h1>WHY THE FUCK OUR PRODUCT IS AWESOME AND UNIQUE</h1>
+		  		<h1 class = "display-4">WHY THE FUCK OUR PRODUCT IS AWESOME AND UNIQUE</h1>
 		        <p>It's a text that goes further and explains the reasons why. Our reader should fall in love with the app and reaaaaally want to know more</p>	
 	       </div>	
 
 
-          <div class = "row" id ="cta">
+          <div class = "row justify-content-center cta">
 
-		    <p>Sois le premier informé de la sortie de MyLeague ! Laisse nous ton adresse email !</p>
-		      <div class = "row" id ="ctabtn">
+		    <p>Sois le premier informé de la sortie de MyLeague.<br> Laisse nous ton adresse email !</p>
 			
 				 <form action="" method="post">
-				 	<div class = "col-lg-6 col-sm-12">
+				 	
 						<input class = "email" type="email" name="myEmail" placeholder="email" required/>	
-					</div>
+						<button class="btn btn-primary btn-lg" href="#" role="button" class="btn"> Go go go !</button>
+					
 
-					<div class = "col-lg-6 col-sm-12">
-					      <p><a class="btn btn-primary btn-lg" href="#" role="button">Go !</a></p>
-					 </div>
+					 
 
 				 </form>
 
-			 </div>
+
           </div>
 
   	  </div>
 
 
 
-	  <div class = " offset-lg-1 col-lg-3 col-sm-12 col align-self-center ">
+	  <div class = " offset-lg-1 col-lg-2 col-sm-12 col align-self-center ">
 	  		<%= image_tag("iphone.png", :class => "iphone")%>
 	 </div>
   </div>
@@ -52,8 +50,8 @@
 
 
 
-<section class = "container" id = "reasonsfluid" >
-	<section class = "container" id = "reasons" >
+<section class = "container justify-content-center" id = "reasonsfluid" >
+
 	<div class = "row justify-content-center"><h2>Why are we so useful</h2></div>
 	
 
@@ -90,7 +88,7 @@
         </div>
 	
      </div>
-</section>
+
 </section>
 
 <section class = "container-fluid" id = "founderbg" >
@@ -118,24 +116,86 @@
 </section>
 </section>
 
+
+
+
+
+
+<section class = "container-fluid" id = "refsec" >
+<section class = "container" id = "ref" >
+	<div class = "row justify-content-center">
+		<h2>Ils ont essayé MyLeague, ils ont adoré</h2>
+	</div>
+	
+
+	<div class = "row justify-content-center">
+		
+	
+		   <div class = "col-lg-4" >
+
+			
+			<p>Wallah, je kiffe c'est de la balle !!<br> Michel, 56 ans<br>Football </p>
+
+		  </div>
+		  		   <div class = "col-lg-4" >
+
+			
+			<p>Wallah, je kiffe c'est de la balle !!<br> Michel, 56 ans<br>Football  </p>
+		  </div>
+
+		  		   <div class = "col-lg-4" >
+
+			
+			<p>Wallah, je kiffe c'est de la balle !!<br> Michel, 56 ans<br>Football </p>
+	</div>
+	
+</section>
+</section>
+
+
+<section class = "container-fluid" id = "coversec" >
+
+	<div class = "row covcontent" >
+		<div class = "col-lg-4"> </div>
+		<div class = "col-lg-4 justify-content-center cta">
+
+		    <p>Intéressé par MyLeague ?<br> Laisse nous ton adresse email, et rejoins la liste des bêta testeurs. </p>
+			
+				 <form action="" method="post">
+				 	
+						<input class = "email" type="email" name="myEmail" placeholder="email" required/>	
+						<button class="btn btn-primary btn-lg" href="#" role="button" class="btn"> Go go go !</button>
+					
+
+					 
+
+				 </form>
+
+        </div>
+        <div class = "col-lg-4"> </div>
+      </div>
+
+
+</section>
+
 <section class="MailChimp">
-	<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://heroku.us17.list-manage.com/subscribe/post?u=c6a3260b52d4e3fa0d365e260&amp;id=87cd0c6fa0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Inscris toi pour être bêta testeur !</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse email" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c6a3260b52d4e3fa0d365e260_87cd0c6fa0" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Inscription" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
+		<!-- Begin MailChimp Signup Form -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+		/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+	<div id="mc_embed_signup">
+	<form action="https://heroku.us17.list-manage.com/subscribe/post?u=c6a3260b52d4e3fa0d365e260&amp;id=87cd0c6fa0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <div id="mc_embed_signup_scroll">
+		<label for="mce-EMAIL">Inscris toi pour être bêta testeur !</label>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse email" required>
+	    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c6a3260b52d4e3fa0d365e260_87cd0c6fa0" tabindex="-1" value=""></div>
+	    <div class="clear"><input type="submit" value="Inscription" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	    </div>
+	</form>
 </div>
 
 <!--End mc_embed_signup-->
