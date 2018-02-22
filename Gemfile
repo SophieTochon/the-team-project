@@ -20,6 +20,7 @@ gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'dotenv-rails'
+gem 'nokogiri'
 
 
 group :development, :test do
