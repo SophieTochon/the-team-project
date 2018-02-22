@@ -4,16 +4,16 @@ class TwitterBot
   attr_accessor :tab
 
   def initialize()
-    @tab_id = []
-  	
+    @tab_tweet = []	
   end
 
   def perform
   	log_in_to_twitter
-    search_tweet("#Fifa18 -rt")
-    search_tweet("#FUT -rt")
-    @tab_id
-
+    search_tweet("#eSports -rt")
+    search_tweet("#FUT18 -rt")
+    fav_tweet
+    #@tab_tweet
+    send_tweet
   end
 
   def log_in_to_twitter
@@ -26,18 +26,24 @@ class TwitterBot
   end
 
   def search_tweet(string)
-    @client.search(string, lang: "fr").take(3).each do |tweet|
+    @client.search(string, lang: "fr").take(1).each do |tweet|
       if tweet.is_a? Twitter::Tweet
         puts "#{tweet.text}"
-        @tab_id << tweet.id
-        @client.fav tweet
+        @tab_tweet << tweet
       end
     end
   end
 
+  def fav_tweet
+    @tab_tweet.each do |tweet|
+      @client.fav tweet
+    end
+  end
 
   def send_tweet
-  	@client.update("#{self.tweet}")
+  	@tab_tweet.each do |tweet|
+      @client.update("@#{tweet.user.screen_name} Une app pour tracker tes résultats sportifs et te comparer à tes potes, ça t'intéresse ? :)")
+    end
   end
 
 
