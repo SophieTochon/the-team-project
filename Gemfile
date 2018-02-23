@@ -21,6 +21,8 @@ gem 'jbuilder'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'dotenv-rails'
 gem 'nokogiri'
+gem 'google_drive'
+gem 'gmail'
 
 
 group :development, :test do

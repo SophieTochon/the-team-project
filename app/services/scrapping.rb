@@ -17,6 +17,6 @@ class Scrapping
 	    end
 	  end
 	end
-	print @tab_email
+	return @tab_email
   end
 end
