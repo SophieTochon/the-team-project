@@ -33,7 +33,7 @@ class SendEmail
 
 	def send_email_to_line(mail)
 
-		gmail = Gmail.connect("rombaut.se@gmail.com", "samura1616")
+		gmail = Gmail.connect("#", "#")
 		gmail.deliver do
 
 			to mail
