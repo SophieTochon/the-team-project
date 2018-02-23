@@ -22,4 +22,5 @@
 
 .byebug_history
 .env
+/app/services/config_seb.json
 /app/services/config.json
