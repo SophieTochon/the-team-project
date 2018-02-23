@@ -25,7 +25,7 @@ end
 
 def send_email_to_line(mail, first_name)
 
-	gmail = Gmail.connect("sophie.tochon@gmail.com", "Gmailpass01")
+	gmail = Gmail.connect("#", "#")
 	gmail.deliver do
 
 		to mail
