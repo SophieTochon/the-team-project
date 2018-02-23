@@ -30,12 +30,13 @@ body {
 
 h2 {
 	padding-bottom: 40px;
+	font-weight: bold;
+	color: #F6220B;
 }
 
 h1 {
-	color: red;
+	color: #F6220B;
 	padding-top: 30px;
-
 }
 
 
@@ -79,23 +80,30 @@ border-radius: .25rem;
 
 form {
 	width: 100%;
+	 display: block;
+text-align: center;
 }
 
 input {
  height: 40px;
  width: 100%;
  padding-left: 10px;
+
 }
 
 
 .btn{
   border: none;
-  width: 200px;
+  max-width: 300px;
   font-size: 150%;
+  margin-top: 20px;
+  padding-bottom: 50px;
 	&:hover {
 		transition: all 0.3s ease;
 		background: #302b63;
 	}
+  
+
 }
 
 .cta {
@@ -115,7 +123,7 @@ input {
 }
 
 .iphone {
-	height: 600px;
+	height: 550px;
 	width: auto;
 
 }
@@ -135,9 +143,10 @@ input {
 
 
 .reasone,.reastwo,.reasthree {
- background-color: white;
+ padding-top: 20px;
+ padding-bottom: 20px;
  border: 1px solid #e1e1e1;
- color: gray;
+ color: #353131;
  background-color: #d3d3d3;
 }
 
@@ -169,6 +178,10 @@ input {
 	position: relative;
 }
 
+#founderbg:hover {
+	background-color: black;
+}
+
 #founder {
 	position : relative;
 	margin-top: 50px;
@@ -178,6 +191,10 @@ input {
 	height: 100px;
 	width: auto;
 	margin-top: 20px;
+}
+
+#founderbg h2 {
+	color: white;
 }
 
 
@@ -252,4 +269,24 @@ background-position: center bottom;
 
 .MailChimp {
 	padding: 5%;
+}
+
+
+/*footer */
+.footerend {
+	background-color: black;
+position: absolute;
+bottom: 0;
+left: 0;
+color: white;
+height: 40px;
+}
+
+.foot {
+    height: 100%;
+
+}
+
+.foot p {
+		margin: auto;
 }
