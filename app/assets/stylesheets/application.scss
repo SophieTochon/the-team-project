@@ -19,11 +19,11 @@ body {
 }
 
 .logo {
-	display: block; 
+	display: block;
 	max-width: 200px;
 	height: 100px;
 	padding-bottom: 20px 0 20px 0;
-        
+
 
 }
 
@@ -43,7 +43,7 @@ h1 {
     background-size: contain;
     background-position: left;
     color: white;
-	} 
+	}
 
 #top p {
 	font-size: 120%;
@@ -69,24 +69,20 @@ input {
 
 
 .btn{
-    border: none;
-    width: 200px;
-    font-size: 150%;
-}
-
-
-.btn:hover {
-    transition: all 0.3s ease;
-    background:  #302b63;
-
-
+  border: none;
+  width: 200px;
+  font-size: 150%;
+	&:hover {
+		transition: all 0.3s ease;
+		background: #302b63;
+	}
 }
 
 .cta {
-	border-radius: 15px; 
+	border-radius: 15px;
 	background-color: #ff9800;
 	color: black;
-	padding : 20px; 
+	padding : 20px;
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
@@ -154,6 +150,7 @@ input {
 .profil {
 	height: 100px;
 	width: auto;
+	margin-top: 20px;
 }
 
 
@@ -164,7 +161,7 @@ input {
 /*References*/
 
 #refsec {
-   background: white;  
+  background: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	color: black;
