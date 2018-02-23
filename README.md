@@ -1,9 +1,5 @@
-**Hello!**
+#Hello!
 
+La team Bali 🌴 est la team la plus cool du monde, mais c'est aussi une team **rebelle 😈 !**
+*Pour cette journée, on a donc décidé de changer un peu les règles du jeu pour créer notre propre projet.*
 
-La team Bali 🌴 est aussi une team **rebelle 😈 !**
-
-On a donc décidé de modifier un peu les règles du jeu, et de créer notre propre projet pour aujourd'hui.
-
-
-More info soon, stay tuned 📻
