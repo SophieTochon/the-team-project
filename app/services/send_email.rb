@@ -16,7 +16,7 @@ class SendEmail
 	# Créer un spreadsheet et le remplir avec un hash connu (un nom en colonne A, un mail en colonne B)
 
 	def create_a_spreadsheet_and_fill_it_with_a_tab
-		session = GoogleDrive::Session.from_config("config.json")
+		session = GoogleDrive::Session.from_config("config_seb.json")
 		spreadsheet = session.create_spreadsheet(title = "My League Project")
 	  	ws = spreadsheet.worksheets[0]
 
@@ -40,7 +40,13 @@ class SendEmail
 			subject "Invitation pour My League Project"
 			html_part do
 	    		content_type "text/html; charset=UTF-8"
-	    		body get_the_email_html
+	    		body "Bonjour, 
+				<br/>
+				Je m'appelle Sébastien, je lance un projet qui permet de tracer ses performances sportives au travers d'une application mobile. </br>
+				Voici le lien du projet : https://myleagueproject.herokuapp.com/, inscrivez-vous pour être tenu au courant. <br/>
+
+				Je vous souhaite une bonne journée ! <br/>
+				Sébastien"
 	   		end
 		end
 	end
