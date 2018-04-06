@@ -11,7 +11,7 @@ class TwitterBot
   	log_in_to_twitter
     search_tweet("#eSports -rt")
     search_tweet("#FUT18 -rt")
-    fav_tweet
+    #fav_tweet
     #@tab_tweet
     send_tweet
   end
@@ -26,7 +26,7 @@ class TwitterBot
   end
 
   def search_tweet(string)
-    @client.search(string, lang: "fr").take(1).each do |tweet|
+    @client.search(string, lang: "fr").take(100).each do |tweet|
       if tweet.is_a? Twitter::Tweet
         puts "#{tweet.text}"
         @tab_tweet << tweet
@@ -43,6 +43,7 @@ class TwitterBot
   def send_tweet
   	@tab_tweet.each do |tweet|
       @client.update("@#{tweet.user.screen_name} Une app pour tracker tes résultats sportifs et te comparer à tes potes, ça t'intéresse ? :)")
+      sleep(2)
     end
   end
 
